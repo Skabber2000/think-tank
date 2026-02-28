@@ -1,0 +1,86 @@
+title: "WW3 Escalation Outlook — Weekly Assessment"
+
+synthesizer_prompt: |
+  Produce a weekly escalation outlook briefing organized by four theaters:
+  Middle East, Ukraine, EU/NATO, Indo-Pacific.
+
+  For each theater provide:
+  1. Risk level (CRITICAL / HIGH / ELEVATED / MODERATE / STABLE) with trend arrow if changed
+  2. Key developments from the past week (cite specific events, dates, actors)
+  3. 2-3 bullet points on implications and second-order effects
+  4. "Watch this week" box with 2-3 specific indicators to monitor
+
+  End with a Bottom Line section connecting cross-theater dynamics.
+
+  Write in intelligence briefing style: direct, factual, no hedging language.
+  No technical details about the analysis process. No claim IDs or confidence scores.
+  This is a readable weekly outlook, not an academic paper.
+
+context: |
+  # WW3 ESCALATION OUTLOOK — WEEKLY ASSESSMENT
+
+  You are producing a weekly geopolitical escalation outlook covering four theaters:
+  Middle East, Ukraine, EU/NATO, and Indo-Pacific.
+
+  The assessment should focus on:
+  - Escalation and de-escalation signals from the past 7 days
+  - Cross-theater coupling (how events in one theater affect others)
+  - Force posture changes (carrier deployments, troop movements, exercises)
+  - Diplomatic developments (summits, negotiations, alliance dynamics)
+  - Nuclear signaling and arms control developments
+  - Proxy and gray-zone operations
+  - Economic warfare (sanctions, energy, trade)
+
+  Key analytical frameworks:
+  - Multi-theater coupling: energy markets, arms flows, semiconductor dependencies, alliance structures
+  - Escalation ladder: rhetorical signals → demonstrative actions → operational preparation → use
+  - Conditional probability: baseline risk vs. risk under specific trigger scenarios
+  - Historical analogies: 1914 (interlocking alliances) vs 1962 (rational crisis management)
+
+  The audience is informed non-specialists who need a concise weekly update.
+  Write for clarity, not for academic rigor. Use plain language.
+
+rounds:
+  - number: 1
+    focus: "Middle East — Iran, Israel, Gulf, Houthis"
+    question: |
+      What are the most significant escalation or de-escalation developments in the
+      Middle East this week? Focus on Iran nuclear program, Israel-Iran confrontation,
+      Gulf state positioning, Houthi maritime operations, and proxy network activity.
+      Cite specific events with dates.
+    agents: [al_rashidi, webb, hokayem, albats]
+
+  - number: 2
+    focus: "Ukraine — Military Operations, Nuclear Signaling, Diplomacy"
+    question: |
+      What are the key developments on the Ukraine front this week? Cover frontline
+      operations, Russian nuclear signaling, Western military aid, ceasefire negotiations,
+      and any changes to the escalation dynamic. How does the Middle East situation
+      affect the Ukraine theater?
+    agents: [voronova, freedman, hicks, torres_a]
+
+  - number: 3
+    focus: "EU/NATO — Alliance Dynamics, Defense Posture, Strategic Autonomy"
+    question: |
+      What are the most important EU/NATO developments this week? Cover defense
+      spending decisions, alliance cohesion, European strategic autonomy moves,
+      force readiness, and transatlantic relationship dynamics. How is Europe
+      responding to simultaneous pressures from multiple theaters?
+    agents: [chen_o, patel_a, frankopan, watson]
+
+  - number: 4
+    focus: "Indo-Pacific — China, Taiwan, North Korea, Force Posture"
+    question: |
+      What are the key Indo-Pacific security developments this week? Cover PLA
+      activity near Taiwan, South China Sea operations, North Korea weapons program,
+      US force posture changes, and allied exercises. How do the Middle East and
+      European situations affect Pacific theater dynamics?
+    agents: [chen_j, lee, walker, buchanan]
+
+  - number: 5
+    focus: "Final Synthesis — Weekly Escalation Outlook"
+    question: |
+      Synthesize all four theater assessments into a single weekly escalation outlook.
+      Assess cross-theater coupling, identify the highest-risk scenario for the
+      coming week, and provide a bottom-line assessment.
+    agents: [synthesizer]
