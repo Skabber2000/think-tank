@@ -1,0 +1,44 @@
+title: "Example Debate Specification"
+
+synthesizer_prompt: |
+  Produce a final synthesis covering: (1) consensus findings, (2) key disagreements,
+  (3) recommended actions, (4) risk assessment. Use tables where appropriate.
+
+context: |
+  # Your Problem Context
+
+  Describe the problem, system, or question that the experts will debate.
+  Include relevant background, current state, known issues, and specific
+  questions you want answered.
+
+  ## Background
+  ...
+
+  ## Current State
+  ...
+
+  ## Key Questions
+  1. ...
+  2. ...
+  3. ...
+
+rounds:
+  - number: 1
+    focus: "Problem Assessment"
+    question: |
+      What are the key strengths and weaknesses of the current approach?
+      Identify 2-3 critical gaps.
+    agents: [expert_1, expert_2]
+
+  - number: 2
+    focus: "Solution Design"
+    question: |
+      What solutions do you propose for the gaps identified in Round 1?
+      Be specific about implementation approach and trade-offs.
+    agents: [expert_2, expert_3]
+
+  - number: 3
+    focus: "Final Synthesis"
+    question: |
+      Synthesize all findings into an actionable roadmap.
+    agents: [synthesizer]

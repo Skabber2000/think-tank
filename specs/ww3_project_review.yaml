@@ -1,0 +1,165 @@
+title: "WW3 Global Strategic Assessment System — Project Review"
+
+synthesizer_prompt: |
+  Produce the FINAL SYNTHESIS as a comprehensive Markdown document.
+  Include:
+  1. CONSENSUS FINDINGS — Top 10 improvements ranked by expert support
+  2. HIGH-CONVICTION MINORITY VIEWS — 3-5 contrarian but transformative ideas
+  3. EFFORT/IMPACT PRIORITIZATION MATRIX (Quick Wins, Strategic Investments, Fill-Ins, Avoid)
+  4. IMPLEMENTATION ROADMAP (Phase 1: Week 1-2, Phase 2: Month 1, Phase 3: Month 2-3, Phase 4: Month 3-6)
+  5. ARCHITECTURAL DECISION RECORDS — Top 5 decisions with options, rationale, trade-offs
+  6. RISK REGISTER — Top 5 risks of NOT implementing improvements
+  Use tables where appropriate. Be concrete.
+
+context: |
+  # WW3 GLOBAL STRATEGIC ASSESSMENT SYSTEM — PROJECT REVIEW
+
+  ## System Overview
+  An agentic AI system that generates comprehensive geopolitical intelligence assessments
+  using a dual-model architecture (GPT-5 for initial analysis + Claude Opus for NATO-style
+  rewriting). Built by Eugene and Ilia Nayshtetik.
+
+  ## Current Architecture (V1.0 — Production)
+
+  ### Pipeline (5 sequential scripts, run manually):
+  1. generate_global_report_2025.py — GPT-5 generates 5 theater reports using KB context (~4 min)
+  2. rewrite_reports_nato_style.py — Claude Opus rewrites to NATO intelligence format (~3 min)
+  3. rebrand_reports_final.py — Attribution cleanup (~30 sec)
+  4. convert_final_article_to_docx.py — DOCX generation (~10 sec)
+  5. convert_to_pdf.py — PDF output (~10 sec)
+
+  ### Knowledge Base:
+  - 924 semantic triples (subject-predicate-object) in JSON
+  - 23 military doctrines across 13 nations
+  - 3 JSON files: agent_brain.json (653 triples), strategic_triples.json (74), actor_interactions.json (197)
+  - No ontology, no schema enforcement, no versioning
+
+  ### Theaters (5): Ukraine, Israel/Middle East, NATO/EU, Indo-Pacific, Venezuela/Caribbean
+
+  ### Output:
+  - ~150 pages across 5 theater reports + executive summary
+  - Combined PDF/DOCX deliverable
+  - 3 HTML visualizations
+
+  ### Infrastructure:
+  - Python 3.11, OpenAI + Anthropic SDKs
+  - API key pooling (up to 5 OpenAI, 4 Anthropic keys)
+  - Docker-compose (exists but untested)
+  - No CI/CD, no tests, no monitoring
+
+  ## V2.0 Architecture (Holistic — Designed but incomplete)
+  7-Agent Multi-Domain Debate System (Military, Energy, Destabilization, Sabotage,
+  Blackmail, Corruption, Social Cohesion). Triple Logic Reasoning (deductive, inductive,
+  abductive). 3-Round Debate Protocol.
+  Status: Architecture docs exist, KB expansion partial (~5,000 triples), core agent
+  code NOT implemented.
+
+  ## Recent Ad-Hoc Usage (February 2026)
+  Claude Code sessions generating crisis briefings (Iran, Ukraine) — 1,091 lines each,
+  12-13 parts, 67 sources. Multi-agent parallel research. NOT from pipeline.
+
+  ## Known Issues:
+  1. No automated tests or quality metrics
+  2. KB is tiny (924 triples) and static
+  3. Pipeline is manual (5 scripts)
+  4. No real-time data ingestion
+  5. No forecasting validation
+  6. English-language only
+  7. No API or programmatic access
+  8. No UI beyond markdown
+  9. V2.0 designed but not built
+  10. Ad-hoc approach works better but isn't reproducible
+  11. No version control on reports
+  12. No access control
+  13. Duplicate files
+  14. 19 temp scripts in kb/tmp/
+  15. Visualizations are static and outdated
+
+  ## Metrics:
+  - Lines of Python: ~3,500 (production) + ~2,000 (holistic)
+  - Documentation: 6 files, ~2,300 lines
+  - KB: 924 triples, 3 JSON files
+  - Reports: ~150 pages per cycle
+  - Processing time: 10-15 min (pipeline), ~1 hour (ad-hoc)
+  - API cost: $0.80-1.60/report (pipeline), ~$5-10 (ad-hoc)
+
+rounds:
+  - number: 1
+    focus: "Intelligence Quality & Analytic Standards"
+    question: |
+      How does this system measure up against professional intelligence community
+      standards (ICD 203, structured analytic techniques)? What specific gaps exist
+      in source reliability, confidence calibration, and alternative analysis?
+    agents: [blackwell, voronova, chen_j, al_rashidi]
+
+  - number: 2
+    focus: "Knowledge Base Architecture & Scaling"
+    question: |
+      The KB has 924 triples with no ontology. How should it be redesigned for 100K+
+      triples? What NLP pipelines are needed for automated extraction? How to implement
+      proper RAG vs raw JSON context injection?
+    agents: [chang, hassan, kim, sharma]
+
+  - number: 3
+    focus: "Multi-Agent Architecture & Agentic AI"
+    question: |
+      The V2.0 7-agent debate system is designed but not built. What's the right
+      architecture? How to move from prompt templates to truly agentic behavior with
+      tool use, planning, and coordination?
+    agents: [petrov, al_sayed, sharma, torres_m]
+
+  - number: 4
+    focus: "Software Engineering & Production Readiness"
+    question: |
+      The codebase has no tests, no CI, hardcoded paths, manual pipeline execution.
+      What's the path to production? Cloud architecture, API design, orchestration,
+      security posture?
+    agents: [park, kowalski, mendez, laurent, patel_r]
+
+  - number: 5
+    focus: "Product Strategy & Market Positioning"
+    question: |
+      Who is the actual user? Is this a Palantir competitor, a SaaS product, a
+      consulting deliverable, or a think tank tool? What's the TAM, the moat, and
+      the business model? How should the UX work for intelligence analysts?
+    agents: [brooks, chen_o, gonzalez, zhang]
+
+  - number: 6
+    focus: "Geopolitical Coverage & Theater Analysis"
+    question: |
+      Are 5 theaters sufficient? How to handle Indo-Pacific depth, Africa/Sahel,
+      Central Asia? How well does the system model Russian internal politics,
+      Chinese strategic thinking, and Middle Eastern sub-state actors?
+    agents: [chen_j, voronova, hokayem, torres_a, albats]
+
+  - number: 7
+    focus: "Forecasting, Calibration & Epistemic Rigor"
+    question: |
+      The system makes probability forecasts but never validates them. How to build
+      a forecasting track record with Brier scores? How to handle fat-tail events
+      and cognitive biases baked into LLM assessments?
+    agents: [tetlock, taleb, kahneman, hicks]
+
+  - number: 8
+    focus: "Ethics, Safety & Responsible AI"
+    question: |
+      This system produces NATO-style assessments that strip AI attribution. It could
+      be misused. What guardrails are needed? How to audit for systematic biases?
+      What are the dual-use risks and the responsible deployment framework?
+    agents: [hogarth, risen, chowdhury, ord]
+
+  - number: 9
+    focus: "Risk Assessment & Critical Failure Modes"
+    question: |
+      Challenge every assumption. What kills this project? Is the KB approach
+      fundamentally flawed? Can LLMs really do intelligence analysis? What
+      geopolitical, technical, and organizational risks are being underestimated?
+    agents: [taleb, walker, buchanan, lee, freedman]
+
+  - number: 10
+    focus: "Final Synthesis: Implementation Roadmap"
+    question: |
+      Synthesize all 9 rounds into an actionable implementation roadmap. Produce
+      consensus findings, minority views, effort/impact matrix, phased roadmap,
+      architectural decisions, and risk register.
+    agents: [synthesizer]

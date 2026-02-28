@@ -1,0 +1,42 @@
+[
+  {
+    "id": "boot_001",
+    "text": "Selective participation (4-5 agents per round) produces better debate quality than having all agents speak every round, while reducing cost by 90%.",
+    "source_debate": "_bootstrap",
+    "category": "methodology",
+    "confidence": 0.9,
+    "created_at": "2026-02-28T00:00:00"
+  },
+  {
+    "id": "boot_002",
+    "text": "Structured JSON claims with explicit confidence levels and evidence citations produce more rigorous analysis than free-form text responses.",
+    "source_debate": "_bootstrap",
+    "category": "methodology",
+    "confidence": 0.85,
+    "created_at": "2026-02-28T00:00:00"
+  },
+  {
+    "id": "boot_003",
+    "text": "A dedicated skeptic/red-team agent should participate in at least one round to challenge groupthink. Without adversarial pressure, expert panels converge too quickly.",
+    "source_debate": "_bootstrap",
+    "category": "bias",
+    "confidence": 0.8,
+    "created_at": "2026-02-28T00:00:00"
+  },
+  {
+    "id": "boot_004",
+    "text": "The synthesizer should use a more capable model than the regular agents. The quality gap between Sonnet and Opus matters most during synthesis.",
+    "source_debate": "_bootstrap",
+    "category": "process",
+    "confidence": 0.85,
+    "created_at": "2026-02-28T00:00:00"
+  },
+  {
+    "id": "boot_005",
+    "text": "Showing agents the 6 most recent prior moves (not all moves) balances context awareness with token efficiency. Synthesizer should see all moves.",
+    "source_debate": "_bootstrap",
+    "category": "methodology",
+    "confidence": 0.75,
+    "created_at": "2026-02-28T00:00:00"
+  }
+]

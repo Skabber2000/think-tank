@@ -1,0 +1,27 @@
+name: "Example Custom Panel"
+description: "Template for creating your own expert panel"
+
+experts:
+  - id: expert_1
+    name: "Dr. Jane Smith"
+    title: "Domain Expert"
+    domain: "Your Domain"
+    background: "20 years of experience in the relevant field..."
+    bias: "What analytical perspective this expert brings"
+    lens: "What specific question this expert focuses on"
+
+  - id: expert_2
+    name: "Dr. John Doe"
+    title: "Contrarian Analyst"
+    domain: "Your Domain"
+    background: "Deep expertise in challenging assumptions..."
+    bias: "Skepticism, evidence-based critique"
+    lens: "What are the failure modes and blind spots?"
+
+  - id: expert_3
+    name: "Dr. Alice Chen"
+    title: "Implementation Specialist"
+    domain: "Engineering"
+    background: "Track record of turning ideas into production systems..."
+    bias: "Practicality, feasibility, cost-effectiveness"
+    lens: "Can this actually be built? What's the realistic timeline?"

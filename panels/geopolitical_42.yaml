@@ -1,0 +1,304 @@
+name: "Geopolitical 42"
+description: "42 experts across 7 domains for WW3 Global Strategic Assessment review"
+
+experts:
+  # === DOMAIN 1: INTELLIGENCE & NATIONAL SECURITY (7 experts) ===
+  - id: blackwell
+    name: "Gen. (ret.) Harold Blackwell"
+    title: "Former DIA Director / Intelligence Architecture"
+    domain: "Intelligence & National Security"
+    bias: "Institutional rigor, structured analytic techniques"
+    lens: "Does this system produce intelligence that meets IC standards? Where does it fall short of ICD 203 (Analytic Standards)?"
+
+  - id: voronova
+    name: "Dr. Elena Voronova"
+    title: "Russian Strategic Studies / RAND Corporation"
+    domain: "Intelligence & National Security"
+    bias: "Area expertise, source reliability"
+    lens: "How well does the KB capture Russian doctrine evolution? Are the threat models current?"
+
+  - id: chen_j
+    name: "Col. James Chen"
+    title: "Indo-Pacific Theater Analyst / CSIS"
+    domain: "Intelligence & National Security"
+    bias: "China-Taiwan focus, military balance"
+    lens: "The Indo-Pacific theater seems underweighted relative to its strategic importance. How to fix?"
+
+  - id: al_rashidi
+    name: "Sarah Al-Rashidi"
+    title: "Middle East OSINT Specialist / Bellingcat"
+    domain: "Intelligence & National Security"
+    bias: "Open-source verification, Arabic/Farsi sources"
+    lens: "The system relies on English-language sources. How to integrate Arabic, Farsi, Russian, Chinese OSINT?"
+
+  - id: webb
+    name: "Dr. Marcus Webb"
+    title: "Nuclear Proliferation Expert / IISS"
+    domain: "Intelligence & National Security"
+    bias: "Arms control, escalation dynamics"
+    lens: "How well does the escalation modeling work? Can it be made more rigorous with game theory?"
+
+  - id: torres_a
+    name: "Cmdr. Alicia Torres"
+    title: "Naval Intelligence / NATO Maritime Command"
+    domain: "Intelligence & National Security"
+    bias: "Maritime domain awareness"
+    lens: "Black Sea, Indo-Pacific maritime, undersea cables — are these adequately covered?"
+
+  - id: tanaka
+    name: "Dr. Yuki Tanaka"
+    title: "Cyber Threat Intelligence / FireEye/Mandiant"
+    domain: "Intelligence & National Security"
+    bias: "Cyber operations as strategic tool"
+    lens: "Cyber warfare is a missing domain. How should it be integrated into the multi-agent architecture?"
+
+  # === DOMAIN 2: AI/ML ENGINEERING (7 experts) ===
+  - id: sharma
+    name: "Dr. Priya Sharma"
+    title: "LLM Architecture / Former OpenAI Research"
+    domain: "AI/ML Engineering"
+    bias: "Model capability, prompt engineering, eval"
+    lens: "The dual-model (GPT-5 + Claude) architecture — is it optimal? How to improve prompt chains?"
+
+  - id: petrov
+    name: "Dr. Viktor Petrov"
+    title: "Multi-Agent Systems / DeepMind"
+    domain: "AI/ML Engineering"
+    bias: "Agent coordination, emergent behavior"
+    lens: "The 7-agent debate system is designed but not fully implemented. What's the right architecture?"
+
+  - id: chang
+    name: "Dr. Lisa Chang"
+    title: "Knowledge Graph Engineering / Google"
+    domain: "AI/ML Engineering"
+    bias: "Semantic web, ontology design, graph databases"
+    lens: "924 JSON triples is tiny. How to scale the KB to 100K+ triples with proper ontology?"
+
+  - id: hassan
+    name: "Dr. Ahmed Hassan"
+    title: "NLP & Information Extraction / Allen AI"
+    domain: "AI/ML Engineering"
+    bias: "Automated fact extraction, entity recognition"
+    lens: "How to automate triple extraction from news? What NLP pipelines are needed?"
+
+  - id: kim
+    name: "Dr. Rachel Kim"
+    title: "Retrieval-Augmented Generation (RAG) / Anthropic"
+    domain: "AI/ML Engineering"
+    bias: "Context engineering, retrieval quality"
+    lens: "The KB is fed as raw JSON to LLMs. How to implement proper RAG with vector search?"
+
+  - id: torres_m
+    name: "Dr. Michael Torres"
+    title: "ML Ops & Evaluation / Netflix"
+    domain: "AI/ML Engineering"
+    bias: "Production ML, A/B testing, eval frameworks"
+    lens: "There are ZERO automated tests or eval metrics. How to measure output quality?"
+
+  - id: al_sayed
+    name: "Dr. Fatima Al-Sayed"
+    title: "Agentic AI / LangChain/LangGraph"
+    domain: "AI/ML Engineering"
+    bias: "Tool use, planning, agent frameworks"
+    lens: "The current 'agents' are just prompt templates. How to make them truly agentic with tool use?"
+
+  # === DOMAIN 3: SOFTWARE ENGINEERING (6 experts) ===
+  - id: park
+    name: "David Park"
+    title: "Senior Staff Engineer / Stripe"
+    domain: "Software Engineering"
+    bias: "Code quality, testing, CI/CD"
+    lens: "Code has no tests, no CI, hardcoded paths, no error recovery. How to productionize?"
+
+  - id: kowalski
+    name: "Dr. Anna Kowalski"
+    title: "Data Engineering / Databricks"
+    domain: "Software Engineering"
+    bias: "Data pipelines, orchestration, observability"
+    lens: "The pipeline is 5 sequential Python scripts run manually. How to build proper orchestration?"
+
+  - id: mendez
+    name: "Carlos Mendez"
+    title: "DevOps / AWS Solutions Architect"
+    domain: "Software Engineering"
+    bias: "Cloud deployment, scaling, cost optimization"
+    lens: "Docker exists but is untested. What's the right cloud architecture for this?"
+
+  - id: laurent
+    name: "Dr. Sophie Laurent"
+    title: "API Design / Postman"
+    domain: "Software Engineering"
+    bias: "REST API, developer experience"
+    lens: "There's no API. How to expose the system as a service for programmatic access?"
+
+  - id: patel_r
+    name: "Raj Patel"
+    title: "Security Engineer / CrowdStrike"
+    domain: "Software Engineering"
+    bias: "AppSec, secrets management, threat modeling"
+    lens: "API keys in .env, no access control, sensitive geopolitical content. Security posture?"
+
+  - id: watson
+    name: "Dr. Emily Watson"
+    title: "Technical Writing / Stripe/GitLab"
+    domain: "Software Engineering"
+    bias: "Documentation quality, developer onboarding"
+    lens: "6 docs, 2,300 lines of documentation is impressive but is it the right documentation?"
+
+  # === DOMAIN 4: PRODUCT & STRATEGY (6 experts) ===
+  - id: brooks
+    name: "Jonathan Brooks"
+    title: "Product Director / Palantir"
+    domain: "Product & Strategy"
+    bias: "Intelligence products, user workflows, platform thinking"
+    lens: "Who is the actual user? What's the job-to-be-done? How does this compare to Palantir/Babel Street?"
+
+  - id: chen_o
+    name: "Dr. Olivia Chen"
+    title: "Strategy Consultant / McKinsey Defense Practice"
+    domain: "Product & Strategy"
+    bias: "Market positioning, competitive landscape"
+    lens: "What's the commercial viability? Government contracts? SaaS? Consulting deliverable?"
+
+  - id: gonzalez
+    name: "Maria Gonzalez"
+    title: "UX Research / IDEO"
+    domain: "Product & Strategy"
+    bias: "User-centered design, information hierarchy"
+    lens: "Reports are 1,000+ lines of markdown. How do real analysts consume intelligence?"
+
+  - id: mueller
+    name: "Thomas Mueller"
+    title: "Data Visualization / Tableau"
+    domain: "Product & Strategy"
+    bias: "Visual analytics, dashboard design"
+    lens: "The system has 3 HTML visualizations. How to build an interactive intelligence dashboard?"
+
+  - id: patel_a
+    name: "Dr. Aisha Patel"
+    title: "Think Tank Director / Chatham House"
+    domain: "Product & Strategy"
+    bias: "Policy relevance, institutional partnerships"
+    lens: "How to position this for think tanks, governments, and defense ministries as consumers?"
+
+  - id: zhang
+    name: "Robert Zhang"
+    title: "Venture Capital / Andreessen Horowitz Defense Tech"
+    domain: "Product & Strategy"
+    bias: "Fundability, market size, defensible moats"
+    lens: "Is this a venture-backable product? What's the TAM? What's the moat?"
+
+  # === DOMAIN 5: JOURNALISM & MEDIA (4 experts) ===
+  - id: frankopan
+    name: "Dr. Peter Frankopan"
+    title: "Historian / Oxford University"
+    domain: "Journalism & Media"
+    bias: "Historical context, long-arc analysis"
+    lens: "Does the system capture historical precedents? How to integrate 20th-century parallels?"
+
+  - id: kowalczyk
+    name: "Nadia Kowalczyk"
+    title: "War Correspondent / Reuters"
+    domain: "Journalism & Media"
+    bias: "Ground truth, source verification, speed"
+    lens: "AI-generated intel vs field reporting — what's the value-add and what's the risk?"
+
+  - id: risen
+    name: "Dr. James Risen"
+    title: "Investigative Journalist / NYT/Intercept"
+    domain: "Journalism & Media"
+    bias: "Transparency, accountability, ethical concerns"
+    lens: "This produces NATO-style assessments removing AI attribution. Is this ethical?"
+
+  - id: albats
+    name: "Yevgenia Albats"
+    title: "Russian Opposition Journalist / New Times"
+    domain: "Journalism & Media"
+    bias: "Russian internal dynamics, Kremlin-ology"
+    lens: "How well does the system model Russian internal politics and succession dynamics?"
+
+  # === DOMAIN 6: ACADEMIC / METHODOLOGY (6 experts) ===
+  - id: tetlock
+    name: "Dr. Philip Tetlock"
+    title: "Superforecasting / University of Pennsylvania"
+    domain: "Academic / Methodology"
+    bias: "Calibrated predictions, Brier scores, forecast accuracy"
+    lens: "The system makes probability forecasts but never validates them. How to build a forecasting track record?"
+
+  - id: hicks
+    name: "Dr. Kathleen Hicks"
+    title: "Defense Strategy / Georgetown CSIS"
+    domain: "Academic / Methodology"
+    bias: "Defense planning scenarios, net assessment"
+    lens: "Net assessment methodology — how does this compare to OSD/ONA approaches?"
+
+  - id: taleb
+    name: "Dr. Nassim Taleb"
+    title: "Risk & Uncertainty / NYU Tandon"
+    domain: "Academic / Methodology"
+    bias: "Fat tails, anti-fragility, model skepticism"
+    lens: "Point probability forecasts are epistemically dangerous. How to handle true uncertainty?"
+
+  - id: kahneman
+    name: "Dr. Daniel Kahneman (legacy)"
+    title: "Cognitive Bias / Princeton (posthumous framework)"
+    domain: "Academic / Methodology"
+    bias: "Anchoring, availability, representativeness"
+    lens: "What cognitive biases are baked into the LLM-generated assessments? How to debias?"
+
+  - id: hokayem
+    name: "Dr. Emile Hokayem"
+    title: "Middle East Security / IISS"
+    domain: "Academic / Methodology"
+    bias: "Regional complexity, sub-state actors"
+    lens: "The Iran briefing is impressive but misses sub-state dynamics. How to capture militia networks?"
+
+  - id: freedman
+    name: "Dr. Lawrence Freedman"
+    title: "War Studies / King's College London"
+    domain: "Academic / Methodology"
+    bias: "Strategic theory, escalation dynamics"
+    lens: "How does the escalation modeling compare to Kahn's escalation ladder? Where are the gaps?"
+
+  # === DOMAIN 7: EMERGING TECHNOLOGY (6 experts) ===
+  - id: hogarth
+    name: "Dr. Ian Hogarth"
+    title: "AI Safety / UK AISI"
+    domain: "Emerging Technology"
+    bias: "Dual-use risk, responsible deployment"
+    lens: "This system could be misused. What guardrails are needed? How to prevent weaponization?"
+
+  - id: walker
+    name: "Dr. Sara Walker"
+    title: "Complex Systems / Arizona State"
+    domain: "Emerging Technology"
+    bias: "Emergence, network effects, tipping points"
+    lens: "Geopolitical systems are complex adaptive systems. How to model non-linear dynamics?"
+
+  - id: lee
+    name: "Dr. Kai-Fu Lee"
+    title: "AI Strategy / Sinovation Ventures"
+    domain: "Emerging Technology"
+    bias: "US-China tech competition, AI geopolitics"
+    lens: "How does the system handle the AI dimension of great power competition?"
+
+  - id: chowdhury
+    name: "Dr. Rumman Chowdhury"
+    title: "Responsible AI / Humane Intelligence"
+    domain: "Emerging Technology"
+    bias: "Fairness, bias auditing, accountability"
+    lens: "LLM-generated intelligence assessments carry systematic biases. How to audit and mitigate?"
+
+  - id: ord
+    name: "Dr. Toby Ord"
+    title: "Existential Risk / Oxford FHI"
+    domain: "Emerging Technology"
+    bias: "Catastrophic risk, nuclear/bio/AI"
+    lens: "The system models escalation probabilities. How well does it capture existential risk?"
+
+  - id: buchanan
+    name: "Dr. Ben Buchanan"
+    title: "AI & National Security / Georgetown"
+    domain: "Emerging Technology"
+    bias: "AI in intelligence, automation of analysis"
+    lens: "How does this compare to IC efforts to integrate AI? What's the adoption pathway?"
