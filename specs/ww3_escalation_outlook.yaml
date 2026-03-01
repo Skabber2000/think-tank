@@ -37,6 +37,24 @@ context: |
   - Conditional probability: baseline risk vs. risk under specific trigger scenarios
   - Historical analogies: 1914 (interlocking alliances) vs 1962 (rational crisis management)
 
+  Primary OSINT sources to monitor (Telegram channels by theater):
+
+  Middle East / Iran:
+  - @SepahNews (IRGC official), @FarsNews_Agency, @tasaborz (Tasnim)
+  - @IranintlTV (Iran International), @AlMayadeenNews (Al Mayadeen)
+  - @AlManar_Channel (Hezbollah), @AnsarAllahMedia (Houthi official)
+  - @rybar (Russian OSINT), @Megatron_ron, @geopolitics_prime
+  - @Abbasdjuma, @intelslava, @Intel_Sky, Saberin News
+
+  Ukraine:
+  - @DeepStateUA (frontline maps and situational awareness)
+  - @DIUkraine (Defense Intelligence of Ukraine — official)
+  - @SBUkr (Security Service of Ukraine — official)
+  - @mintsyfra (Ministry of Digital Transformation — official)
+
+  General:
+  - @bbcpersian, @RadioFarda_, @Middle_East_Spectator
+
   The audience is informed non-specialists who need a concise weekly update.
   Write for clarity, not for academic rigor. Use plain language.
 
