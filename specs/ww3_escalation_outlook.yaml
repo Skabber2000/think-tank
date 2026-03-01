@@ -39,21 +39,92 @@ context: |
 
   Primary OSINT sources to monitor (Telegram channels by theater):
 
-  Middle East / Iran:
-  - @SepahNews (IRGC official), @FarsNews_Agency, @tasaborz (Tasnim)
-  - @IranintlTV (Iran International), @AlMayadeenNews (Al Mayadeen)
-  - @AlManar_Channel (Hezbollah), @AnsarAllahMedia (Houthi official)
-  - @rybar (Russian OSINT), @Megatron_ron, @geopolitics_prime
-  - @Abbasdjuma, @intelslava, @Intel_Sky, Saberin News
+  MIDDLE EAST / IRAN / AXIS OF RESISTANCE:
+  Iranian State & IRGC:
+  - @SepahNews (IRGC official), @FarsNews_Agency (IRGC-linked), @tasaborz (Tasnim, IRGC-linked)
+  - @IranintlTV (Iran International, independent London), @Irna_en (IRNA state wire)
+  - @presstv (Press TV, state English), @bbcpersian (BBC Persian), @RadioFarda_ (Radio Farda)
+  - Saberin News (IRGC-affiliated, first to report commander deaths)
+  Hezbollah / Lebanon:
+  - @AlManar_Channel (Hezbollah Al-Manar TV), @AlMayadeenNews (Al Mayadeen, pro-resistance Beirut)
+  Houthis / Yemen:
+  - @AnsarAllahMedia (Houthi official military media)
+  Hamas / Palestine:
+  - @PalestineResist (Resistance News Network, aggregates all faction updates, ~156K)
+  Iraqi Militias:
+  - Kataib Hezbollah, Al Nujaba, Sayyed Al Shuhada (channels rotate; monitor via aggregators)
+  Israel:
+  - @idfofficial (IDF Spokesperson), @osintil (OSINT Israel)
 
-  Ukraine:
-  - @DeepStateUA (frontline maps and situational awareness)
+  UKRAINE / RUSSIA:
+  Ukrainian Official:
+  - @DeepStateUA (frontline maps, ~700K, definitive territory tracker)
   - @DIUkraine (Defense Intelligence of Ukraine — official)
   - @SBUkr (Security Service of Ukraine — official)
   - @mintsyfra (Ministry of Digital Transformation — official)
+  Russian Tier-1 Milbloggers (1M+ subs):
+  - @rybar (Rybar, ~1.5M, OSINT maps — also @rybar_en English)
+  - @readovkanews (Readovka, ~2M, pro-Kremlin breaking news)
+  - @RKadyrov_95 (Kadyrov, ~3M, Chechen forces)
+  - @dva_majors (Two Majors, ~1.2M, MoD-aligned daily sitreps)
+  - @wargonzo (WarGonzo, ~1.2M, embedded frontline)
+  - @SolovievLive (Soloviev, ~1.2M, state TV propagandist)
+  - @boris_rozhin (Colonel Cassad, ~900K, military analysis)
+  - @rusich_army (Archangel Spetsnaz, ~1.1M, special forces)
+  Russian Tier-2 (200K–1M):
+  - @epoddubny (Poddubny, ~700K, VGTRK war correspondent)
+  - @sashakots (Kotsnews, ~600K, Komsomolskaya Pravda)
+  - @Sladkov_plus (Sladkov, ~870K, veteran war correspondent)
+  - @fighter_bomber (Fighterbomber, ~500K, Russian Air Force/VKS)
+  - @milinfolive (Military Observer, ~600K, weapons/tech analysis)
+  - @grey_zone (Grey Zone, ~516K, Wagner Group)
+  - @yurasumy (Podolyaka, ~1M, frontline analysis)
+  Russian Official:
+  - @rian_ru (RIA Novosti, ~3M, state wire), @mod_russia_en (MoD English)
+  - @MFARussia (Foreign Ministry English)
+  Ukrainian/Western OSINT:
+  - @wartranslated (WarTranslated, translates RU/UA sources to English)
+  - @noel_reports (NOELREPORTS, breaking military news)
+  - @uaweapons (Ukraine Weapons Tracker, equipment documentation)
 
-  General:
-  - @bbcpersian, @RadioFarda_, @Middle_East_Spectator
+  EU/NATO:
+  - Monitor via @noel_reports, @wartranslated, @osintdefender for NATO force posture
+  - @SputnikInt (Sputnik, ~35K, Russian counter-narrative in English)
+  - @warfakes / @waronfakesen (War on Fakes — pro-Kremlin pseudo-factcheck, track for disinfo)
+
+  INDO-PACIFIC / CHINA / DPRK:
+  Chinese State Media:
+  - @PDChinaNews (People's Daily), @CGTNOfficial (CGTN), @XinhuaNewsAgency (Xinhua)
+  - @globaltimes_en (Global Times, hawkish commentary)
+  DPRK: No official Telegram presence. Monitor via KCNA Watch (kcnawatch.org), 38 North (38north.org)
+  Regional OSINT:
+  - @missilesnukes (Missiles and Nukes, ~10K, missile launches — caveat: pro-multipolar bias)
+
+  CROSS-THEATER OSINT & VERIFICATION:
+  Flight/Ship Tracking:
+  - @Intelsky (IntelSky, military air traffic), @AircraftSpots (military aviation movements)
+  Geolocation & Satellite:
+  - @GeoConfirmed (volunteer geolocation), @Osinttechnical (weapons ID, sat imagery)
+  - @CalibreObscuraTweets (small arms/weapons flow tracking)
+  Conflict Mapping:
+  - @liveuamap (interactive conflict maps worldwide)
+  Nuclear/WMD:
+  - @ArmsControlWonk (Jeffrey Lewis, nuclear policy — blog + podcast)
+  General Aggregators:
+  - @osintdefender (~100K, global military — caveat: possible pro-RU bias per Molfar)
+  - @warmonitors (War Monitor, ~130K, breaking geopolitics)
+  - @geopolitics_prime (aggregator, relay point for IRGC/Houthi statements)
+  - @Megatron_ron (breaking OSINT, Gulf/ME focus)
+  - @Abbasdjuma (independent journalist, Hormuz/energy analysis)
+  - @intelslava (Intel Slava Z, ~395K, English pro-Russian aggregator)
+  - @Middle_East_Spectator (~307K, pro-Iran bias but useful for resistance axis perspective)
+
+  MONITORING ORGANIZATIONS (not Telegram-native, but track extremist Telegram content):
+  - SITE Intelligence Group (siteintelgroup.com) — jihadist + white supremacist tracking
+  - MEMRI Cyber & Jihad Lab (memri.org) — weekly digests of jihadist Telegram
+  - Counter Extremism Project (counterextremism.com) — ISIS/Hamas/Hezbollah presence reports
+  - Bellingcat (bellingcat.com) — OSINT investigations and verification
+  - Osavul (osavul.cloud) — AI-powered Telegram monitoring, 150K+ channels
 
   The audience is informed non-specialists who need a concise weekly update.
   Write for clarity, not for academic rigor. Use plain language.
